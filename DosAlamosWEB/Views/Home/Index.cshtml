@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <img srcset="../Images/clinica.jpg"/>
+    <h1>Clinica Dos Alamos</h1>
+    <p class="lead">Servicio medico integral enfocado en su bienestar y comodidad.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Solicite su hora</h2>
+        <p>
+            Para solicitar una hora medica con nuestros especialistas favor registrese aquí
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Registrarse", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Contactenos</h2>
+        <p>
+            Todos los datos de contacto para poder ayudarlo.
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Contacto", "Contacto", "Home")</p>
+    </div>
+</div>
